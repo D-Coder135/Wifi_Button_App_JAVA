@@ -25,5 +25,12 @@ public class MainActivity extends AppCompatActivity {
                 wifiManager.setWifiEnabled(true);
             }
         });
+
+        off.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
