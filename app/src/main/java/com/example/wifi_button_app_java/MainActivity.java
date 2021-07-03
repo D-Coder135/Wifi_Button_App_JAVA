@@ -1,11 +1,10 @@
 package com.example.wifi_button_app_java;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
