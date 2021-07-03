@@ -19,18 +19,8 @@ public class MainActivity extends AppCompatActivity {
         on = findViewById(R.id.button);
         off = findViewById(R.id.button2);
 
-        on.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                wifiManager.setWifiEnabled(true);
-            }
-        });
+        on.setOnClickListener(v -> wifiManager.setWifiEnabled(true));
 
-        off.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                wifiManager.setWifiEnabled(false);
-            }
-        });
+        off.setOnClickListener(v -> wifiManager.setWifiEnabled(false));
     }
 }
