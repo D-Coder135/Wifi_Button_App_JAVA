@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     Button on, off;
-    WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
+    WifiManager wifiManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         on = findViewById(R.id.button);
         off = findViewById(R.id.button2);
+        wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
 
         on.setOnClickListener(v -> wifiManager.setWifiEnabled(true));
 
